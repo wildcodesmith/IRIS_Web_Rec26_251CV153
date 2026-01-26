@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sumit Royal">
+    <meta name="description" content="NITK IRIS MESS-DASHBOARD">
+    <title>Mess Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css_files/main_style.css">
+</head>
+
+<body>
+
+
+
+    <nav class="nav-bar-container">
+        <section class="nav-left">
+            <figure class="logo">
+                <img src="images/nitk-logo.png" alt="nitk logo">
+            </figure>
+            <div>
+                <p>NITK</p>
+                <P>Mess</P>
+            </div>
+        </section>
+
+        <section class="nav-right">
+            <figure>
+                <img src="images/user-pic.jpg" alt="user profile picture">
+            </figure>
+
+            <div class="hamburger">
+                <span class="one"></span>
+                <span class="two"></span>
+                <span class="three"></span>
+            </div>
+
+        </section>
+
+    </nav>
+    <section class="hamburger-drop-down-menu-content" id="menu">
+        <div>Dashboard</div>
+        <div>Weekly Meny</div>
+        <div>Mess Cut</div>
+        <div>Feedback</div>
+    </section>
+
+   <header class="header-card-box">
+    
+    <h2 class="card-heading">
+        MESS <br>DASHBOARD | IRIS
+    </h2>
+    <p class="card-content">
+        View menus, manage mess cuts and share feedback seamlessly
+    </p>
+       
+
+   </header>
+    
+
+    <script>
+        let hamburger = document.querySelector(".hamburger")
+        let hamburger_menu_content = document.getElementById("menu")
+        let hamburger_span_one = document.querySelector(".nav-bar-container .nav-right .hamburger .one")
+        let hamburger_span_three = document.querySelector(".nav-bar-container .nav-right .hamburger .three")
+
+        hamburger.addEventListener('click', () => {
+            hamburger_menu_content.classList.toggle("menu-bar-show")
+            hamburger_span_one.classList.toggle("span-transform-one")
+            hamburger_span_three.classList.toggle("span-transform-three")
+        
+        })
+    </script>
+
+
+</body>
+
+</html>

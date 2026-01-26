@@ -1,0 +1,177 @@
+/* background-color: #F8FAFC
+TEXT-PRIMARY : #0F172A;
+TEXT SECONDARY : #64748B
+BORDER : #E5E7EB */
+/* 360 * 640 */
+
+:root {
+    --font-inter: "Inter", sans-serif;
+    --logo-font: "Quicksand", sans-serif;
+
+
+}
+
+body {
+    font-size: 16px;
+    font-family: var(--font-inter);
+    color: #0F172A;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.nav-bar-container {
+
+    background-color: rgb(103, 112, 210);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    padding-right: 10px;
+    color: white;
+
+
+}
+
+.nav-bar-container .nav-left {
+
+    font-family: var(--logo-font);
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 3px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 0px;
+}
+
+.nav-bar-container .nav-left figure {
+    max-width: 85px;
+
+
+}
+
+.nav-bar-container .nav-left figure img {
+    max-width: 100%;
+}
+
+.nav-bar-container .nav-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-bar-container .nav-right figure {
+    max-width: 50px;
+    padding: 10px;
+
+}
+
+.nav-bar-container .nav-right figure img {
+    width: 100%;
+    border-radius: 100%;
+}
+
+.nav-bar-container .nav-right .hamburger span {
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: white;
+    margin: 7px;
+    transition: all ease 0.2s;
+}
+.nav-bar-container .nav-right .hamburger .span-transform-one {
+    transform: translateY(11px);
+
+}
+.nav-bar-container .nav-right .hamburger .span-transform-three{
+    transform: translateY(-11px);
+}
+
+.hamburger-drop-down-menu-content {
+    background-color:rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    width: 100%;
+
+    text-align: center;
+    
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+
+    padding: 5px;
+
+    transform: translateY(-100%);
+    transition: all linear 0.2s;
+
+}
+
+.menu-bar-show {
+ 
+    opacity: 1;
+    display: block;
+    transform: translateY(0);
+
+    pointer-events: auto;
+}
+.hamburger-drop-down-menu-content div{
+    padding:5px;
+
+        border-radius: 10px;
+        max-width: 80%;
+         
+        margin:0 auto;
+        margin-bottom: 5px;
+        /* background-color: #0F172A ; */
+       border: 2px solid #E5E7EB ;
+    
+}
+
+.hamburger-drop-down-menu-content>*:first-child{
+
+    background-color: rgb(103, 112, 210);
+    color:white;
+
+ 
+}
+ 
+.header-card-box{
+    color: rgb(89, 96, 102);
+    text-align: center;
+
+    background-color: #f7f7fa;
+    max-width: 100%;
+    padding: 30px;
+
+}
+.header-card-box .card-heading{
+    font-size: 22px;
+ 
+    
+
+}
+.header-card-box .card-content{
+    max-width: 90%;
+    margin: auto;
+    padding-top: 10px;
+
+    
+
+}
