@@ -1,0 +1,111 @@
+
+/* background-color: #F8FAFC
+TEXT-PRIMARY : #0F172A;
+TEXT SECONDARY : #64748B
+BORDER : #E5E7EB */
+/* 360 * 640 */
+
+:root {
+    --font-inter: "Inter", sans-serif;
+    --logo-font: "Quicksand", sans-serif;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+body {
+    font-size: 16px;
+    font-family: var(--font-inter);
+    color: #0F172A;
+    background-color: rgb(246, 247, 248);
+
+
+}
+
+.main-heading h1 {
+    font-size:28px;
+    text-align: center;
+    padding: 17px ;
+    font-weight: 550;
+ 
+}
+.meta-user-info{
+    background-color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+
+    padding:20px;
+    border:2px outset #f7f8f9 ;
+    box-shadow: 0 0 3px rgb(206, 213, 219);
+    border-radius: 20px;
+    margin:15px;
+ 
+}
+
+.meta-user-info figure{
+    max-width: 70px;
+
+    border:2px solid #989a9d;
+    border-radius: 100%;
+    overflow: hidden;
+padding:1px;
+}
+.meta-user-info figure img{
+    width: 100%;
+    transform: translateY(12px);
+}
+
+.meta-user-info .meta-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 7px;
+    
+    font-weight: 500;
+    font-size: 16.5px;
+     
+
+}
+.blog-card{
+    margin:15px;
+}
+.blog-card .swich-tabs{
+    display: grid;
+    grid-template-rows: 1fr ;
+    grid-template-columns: 1fr 1fr;
+}
+
+#academics_tab_content{
+    display: none;
+    
+    
+}
+
+.blog-card .swich-tabs .border{
+    border-bottom: 2px solid rgb(103, 112, 210);
+}
+
+.blog-card .swich-tabs .personal-tab, .blog-card .swich-tabs  .academics-tab{
+
+    font-size: 17px;
+    font-weight: 580;
+    letter-spacing: 1px;
+    text-align: center;
+    padding:10px;
+    
+
+}

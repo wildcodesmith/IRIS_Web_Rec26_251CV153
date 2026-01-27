@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sumit Royal">
+    <meta name="description" content="user_profile">
+
+    <title>Profile</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css_files/profile_style.css">
+
+</head>
+
+<body>
+
+    <div class="main-heading">
+        <h1>Profile</h1>
+    </div>
+    <header class="meta-user-info">
+        <figure>
+            <img src="images/User.png" alt="user-pic">
+        </figure>
+
+        <div class="meta-content">
+            <div>Sumit Royal</div>
+            <div>B Tech, 1st Year, 2nd Semester</div>
+            <div>Civil Engineering</div>
+        </div>
+    </header>
+    <section class="blog-card">
+        <div class="swich-tabs">
+            <div class="personal-tab border" >
+                Personal
+            </div>
+            <div class="academics-tab"  >
+                Academics
+            </div>
+        </div>
+
+        <div class="personal-card" id="personal_tab_content">
+            <div class="parent-info">
+                <p>Father's Name</p>
+                <p>MANOJ KUMAR</p>
+            </div>
+
+            <div class="birth-info">
+                <p>Date of Birth</p>
+                <time datetime="16-09-2006">16-09-2006</time>
+            </div>
+
+            <div class="gender-info">
+                <p>Gender</p>
+                <p>MALE</p>
+            </div>
+
+            <div class="blood-info">
+                <p>Blood Group</p>
+                <p>A+</p>
+            </div>
+
+            <div class="nationality">
+                <p>Nationality</p>
+                <p>INDIA</p>
+            </div>
+
+            <div class="religion">
+                <p>Religion</p>
+                <p>HINDU</p>
+            </div>
+
+            <div class="user-contact">
+                <p>Phone</p>
+                <a href="tel:+1234567890">+1234567890</a>
+            </div>
+
+            <div class="user-parent-contact">
+                <p>Parent's Phone Number</p>
+                <a href="tel:+1234567890">+1234567890</a>
+            </div>
+
+            <div class="mail-address">
+                <p>Email</p>
+                <a href="mailto:xyz@yahoo.com">xyz@yahoo.com</a>
+            </div>
+
+        </div>
+        <div class="academics-card" id="academics_tab_content">
+            
+            <div class="roll-number">
+                <p>Roll Number</p>
+                <p>251CV153</p>
+            </div>
+
+            <div class="reg-number">
+                <p>Registration Number</p>
+                <p>2510231</p>
+            </div>
+
+            <div class="sem">
+                <p>Semester</p>
+                <p>2</p>
+            </div>
+
+            <div class="branch">
+                <p>Branch</p>
+                <p>Civil Engineering</p>
+            </div>
+
+            <div class="degree">
+                <p>Degree</p>
+                <p>B tech </p>
+            </div>
+
+        </div>
+    </section>
+    <script>
+        const personal_tab = document.querySelector('.personal-tab')
+        const academics_tab = document.querySelector('.academics-tab')
+        const personal_tab_content = document.getElementById("personal_tab_content")
+        const academics_tab_content = document.getElementById("academics_tab_content")
+
+        personal_tab.addEventListener('click',()=>{
+            academics_tab_content.style.display = "none";
+            personal_tab_content.style.display = "block"
+
+            personal_tab.classList.add('border')
+            academics_tab.classList.remove('border')
+
+ 
+        })
+
+        academics_tab.addEventListener('click',()=>{
+            academics_tab_content.style.display = "block";
+            personal_tab_content.style.display = "none";
+
+                        personal_tab.classList.remove('border')
+            academics_tab.classList.add('border')
+
+            
+
+ 
+        })
+    </script>
+</body>
+
+</html>
