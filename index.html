@@ -22,6 +22,10 @@
 
 
     <nav class="nav-bar-container">
+                <section class="profile-popup-view">
+            <div class="user-name">Sumit Royal</div>
+            <div class="profile-button"><button>Profile</button></div>
+        </section>
         <section class="nav-left">
             <figure class="logo">
                 <img src="images/nitk-logo.png" alt="nitk logo">
@@ -34,7 +38,7 @@
 
         <section class="nav-right">
             <figure>
-                <img src="images/user-pic.jpg" alt="user profile picture">
+                <img src="images/User-2.png" alt="user profile picture">
             </figure>
 
             <div class="hamburger">
@@ -43,7 +47,13 @@
                 <span class="three"></span>
             </div>
 
+
         </section>
+        <section class="profile-hamburger">
+            <span></span>
+            <span></span> 
+        </section>
+
 
     </nav>
     <section class="hamburger-drop-down-menu-content" id="menu">
@@ -64,6 +74,27 @@
        
 
    </header>
+
+   <section class="mess-quick-details-card">
+    <div class="mess-balance">
+        <div class="amount"> &#8377;10,250</div>
+        <div class="name">Current Month Balance</div>
+    </div>
+    <div class="mess-cuts">
+        <div class="active"><span>2</span> Active</div>
+        <div>Mess cuts</div>
+    </div>
+    <div class="mess-feedback">
+        <div class="rating"><span> 4.3</span>&nbsp;/5</div>
+        <div>Last Feedback</div>
+    </div>     
+    <div class="current-mess">
+        <div class="mess-name">Karavali</div>
+        <div>Assigned Mess</div>
+    </div>
+     
+    
+   </section>
     
 
     <script>
@@ -76,8 +107,38 @@
             hamburger_menu_content.classList.toggle("menu-bar-show")
             hamburger_span_one.classList.toggle("span-transform-one")
             hamburger_span_three.classList.toggle("span-transform-three")
-        
         })
+
+        let profilePopupView = document.querySelector(".nav-bar-container .profile-popup-view");
+        let navBarLeft = document.querySelector(".nav-bar-container .nav-left")
+        let userPic = document.querySelector('.nav-right figure')
+        let nav_profile_hamburger = document.querySelector(".nav-bar-container .profile-hamburger")
+     
+ 
+         userPic.addEventListener('click',()=>{
+            navBarLeft.classList.add("disappear")
+            userPic.classList.add("figure-border")
+            profilePopupView.classList.add("profile-appear")
+            nav_profile_hamburger.classList.add("profile-hamburger-show")
+            hamburger.classList.add('hamburger-disappear')
+    
+
+
+         })
+         nav_profile_hamburger.addEventListener('click',()=>{
+                        navBarLeft.classList.remove("disappear")
+            userPic.classList.remove("figure-border")
+            profilePopupView.classList.remove("profile-appear")
+            nav_profile_hamburger.classList.remove("profile-hamburger-show")
+            hamburger.classList.remove('hamburger-disappear')
+    
+
+         })
+         console.log(navBarLeft)
+
+         
+
+
     </script>
 
 
