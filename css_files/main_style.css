@@ -271,6 +271,9 @@ margin-left: 9px;
 
 
 }
+.profile-popup-view .user-name{
+    margin-bottom: 11px;
+}
 .profile-popup-view button{
     padding:2px 15px;
     border-radius: 20px;

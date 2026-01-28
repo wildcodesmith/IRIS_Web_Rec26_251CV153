@@ -37,11 +37,11 @@
     </header>
     <section class="blog-card">
         <div class="swich-tabs">
-            <div class="personal-tab border" >
-                Personal
+            <div class="personal-tab" >
+               <button class="border">Personal</button> 
             </div>
             <div class="academics-tab"  >
-                Academics
+               <button> Academics</button>
             </div>
         </div>
 
@@ -122,14 +122,14 @@
         </div>
     </section>
     <script>
-        const personal_tab = document.querySelector('.personal-tab')
-        const academics_tab = document.querySelector('.academics-tab')
+        const personal_tab = document.querySelector('.personal-tab button')
+        const academics_tab = document.querySelector('.academics-tab button')
         const personal_tab_content = document.getElementById("personal_tab_content")
         const academics_tab_content = document.getElementById("academics_tab_content")
 
         personal_tab.addEventListener('click',()=>{
             academics_tab_content.style.display = "none";
-            personal_tab_content.style.display = "block"
+            personal_tab_content.style.display = "flex"
 
             personal_tab.classList.add('border')
             academics_tab.classList.remove('border')
@@ -138,10 +138,10 @@
         })
 
         academics_tab.addEventListener('click',()=>{
-            academics_tab_content.style.display = "block";
+            academics_tab_content.style.display = "flex";
             personal_tab_content.style.display = "none";
 
-                        personal_tab.classList.remove('border')
+              personal_tab.classList.remove('border')
             academics_tab.classList.add('border')
 
             
