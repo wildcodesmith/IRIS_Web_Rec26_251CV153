@@ -99,12 +99,14 @@ padding:1px;
     width: 100%;
     padding:7px;
     border-radius: 20px;
-    border:1px solid black;
+    border:1px solid rgb(86, 85, 85);
 
     font-size: 16px;
     font-family: var(--logo-font);
     font-weight: 500;
     letter-spacing: 2px;
+    color:black;
+    background-color: white;
 }
 
 #academics_tab_content{
