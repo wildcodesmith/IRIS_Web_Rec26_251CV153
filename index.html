@@ -14,6 +14,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" href="css_files/nav-bar-style.css">
     <link rel="stylesheet" href="css_files/main_style.css">
 </head>
 
@@ -61,10 +62,18 @@
 
     </nav>
     <section class="hamburger-drop-down-menu-content" id="menu">
-        <div>Dashboard</div>
-        <div>Weekly Mess</div>
-        <div>Mess Cut</div>
-        <div>Feedback</div>
+        <a href="index.html">
+            <div class="dashboard-button">Dashboard</div>
+        </a>
+        <a href="mess-menu.html">
+            <div class="mess-menu-button">Mess menu</div>
+        </a>
+        <a href="mess-cut.html">
+            <div class="mess-cut-button">Mess Cut</div>
+        </a>
+        <a href="feedback-page.html">
+            <div class="feedback-button">Feedback</div>
+        </a>
     </section>
 
     <header class="header-card-box">
@@ -108,122 +117,88 @@
 
         <div class="food-container">
 
-        <div class="breakfast-corner">
-            <header>
+            <div class="breakfast-corner">
+                <header>
 
-                <figure><img src="images/breakfast.png" alt="breakfast-image"></figure>
-                <p>Breakfast</p>
+                    <figure><img src="images/breakfast.png" alt="breakfast-image"></figure>
+                    <p>Breakfast</p>
 
-            </header>
+                </header>
 
-            <p class="food-items">
-                Poha-peanuts, Chutney, Bread, Butter, Jam, cornflakes, Tea/coffee, Milk With Bournvita, Seasonal Fruits
-            </p>
+                <p class="food-items">
+                    Poha-peanuts, Chutney, Bread, Butter, Jam, cornflakes, Tea/coffee, Milk With Bournvita, Seasonal
+                    Fruits
+                </p>
+            </div>
+            <div class="lunch-corner">
+                <header>
+
+                    <figure><img src="images/lunch.png" alt="Lunch-image"></figure>
+                    <p>Lunch</p>
+
+                </header>
+
+                <p class="food-items">
+                    Poori(unlimited), Jeera rice, Rice(white & boiled), Sambhar, Mutter Palak Masala, Dal Tadka, Lauki
+                    Dry,
+                    buttermilk, Pickle, Papad, Salad, Ice Cream(special)
+                </p>
+            </div>
+            <div class="snacks-corner">
+                <header>
+
+                    <figure><img src="images/snacks.png" alt="Snacks"></figure>
+                    <p>Snacks</p>
+
+                </header>
+
+                <p class="food-items">
+                    Goli bajji(4), Chutney, Bread, Butter, Jam, Tea, Coffee
+                </p>
+            </div>
+            <div class="dinner-corner">
+                <header>
+
+                    <figure><img src="images/dinner.png" alt="Dinner-image"></figure>
+                    <p>Dinner</p>
+
+                </header>
+
+                <p class="food-items">
+                    Wheat Chapathi, Rice(White & Boiled), Tamarind Rice, Toor Dal, Mixed Pulsed Dry, Rasam, Paneer
+                    curry,
+                    Sweet Lassi, Salad.
+                </p>
+            </div>
         </div>
-        <div class="lunch-corner">
-            <header>
-
-                <figure><img src="images/lunch.png" alt="Lunch-image"></figure>
-                <p>Lunch</p>
-
-            </header>
-
-            <p class="food-items">
-                Poori(unlimited), Jeera rice, Rice(white & boiled), Sambhar, Mutter Palak Masala, Dal Tadka, Lauki Dry,
-                buttermilk, Pickle, Papad, Salad, Ice Cream(special)
-            </p>
-        </div>
-        <div class="snacks-corner">
-            <header>
-
-                <figure><img src="images/snacks.png" alt="Snacks"></figure>
-                <p>Snacks</p>
-
-            </header>
-
-            <p class="food-items">
-                Goli bajji(4), Chutney, Bread, Butter, Jam, Tea, Coffee
-            </p>
-        </div>
-        <div class="dinner-corner">
-            <header>
-
-                <figure><img src="images/dinner.png" alt="Dinner-image"></figure>
-                <p>Dinner</p>
-
-            </header>
-
-            <p class="food-items">
-                Wheat Chapathi, Rice(White & Boiled), Tamarind Rice, Toor Dal, Mixed Pulsed Dry, Rasam, Paneer curry,
-                Sweet Lassi, Salad.
-            </p>
-        </div>
-      </div>
     </section>
+    <a href="mess-cut.html">
+        <div class="mess-cut-apply-btn">
+            <button>
+                <figure>
+                    <img src="images/calender.png" alt="calender">
+                </figure>
+                <p>Apply Mess Cut</p>
+            </button>
+        </div>
+    </a>
+    
+    <a href="feedback-page.html">
+        <div class="feedback-btn">
 
-    <div class="mess-cut-apply-btn">
-        <button>
-            <figure>
-                <img src="images/calender.png" alt="calender">
-            </figure>
-            <p>Apply Mess Cut</p>
-        </button>
-    </div>
-    <div class="feedback-btn">
-        <button>
-            <figure>
-                <img src="images/Star.png" alt="star">
-            </figure>
-            <p>
-                Give Feedback
-            </p>
-        </button>
-    </div>
+            <button>
+                <figure>
+                    <img src="images/Star.png" alt="star">
+                </figure>
 
+                <p>
+                    Give Feedback
+                </p>
+            </button>
+        </div>
+    </a>
 
-    <script>
-        let hamburger = document.querySelector(".hamburger")
-        let hamburger_menu_content = document.getElementById("menu")
-        let hamburger_span_one = document.querySelector(".nav-bar-container .nav-right .hamburger .one")
-        let hamburger_span_three = document.querySelector(".nav-bar-container .nav-right .hamburger .three")
-
-        hamburger.addEventListener('click', () => {
-            hamburger_menu_content.classList.toggle("menu-bar-show")
-            hamburger_span_one.classList.toggle("span-transform-one")
-            hamburger_span_three.classList.toggle("span-transform-three")
-        })
-
-        let profilePopupView = document.querySelector(".nav-bar-container .profile-popup-view");
-        let navBarLeft = document.querySelector(".nav-bar-container .nav-left")
-        let userPic = document.querySelector('.nav-right figure')
-        let nav_profile_hamburger = document.querySelector(".nav-bar-container .profile-hamburger")
-
-
-        userPic.addEventListener('click', () => {
-            navBarLeft.classList.add("disappear")
-            userPic.classList.add("figure-border")
-            profilePopupView.classList.add("profile-appear")
-            nav_profile_hamburger.classList.add("profile-hamburger-show")
-            hamburger.classList.add('hamburger-disappear')
-
-
-
-        })
-        nav_profile_hamburger.addEventListener('click', () => {
-            navBarLeft.classList.remove("disappear")
-            userPic.classList.remove("figure-border")
-            profilePopupView.classList.remove("profile-appear")
-            nav_profile_hamburger.classList.remove("profile-hamburger-show")
-            hamburger.classList.remove('hamburger-disappear')
-
-
-        })
-        console.log(navBarLeft)
-
-
-
-
-    </script>
+    <script src="js_files/main_script.js"></script>
 
 
 </body>
