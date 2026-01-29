@@ -72,7 +72,106 @@
         </a>
     </section>
 
+
+<!-- Black star: &#9733; or &#x2605;
+White star: &#9734; or &#x2606; -->
+
+<!-- colored star special sequence character
+ &#x2605;  -->
+ <!-- &#11048;  ⯨ Half Star -->
+
+
+    <section class="feedback-card">
+
+        <header>
+            <h2>Submit Feedback</h2>
+        </header>
+
+        <div class="feedback-content">
+            <div class="star-ratting">
+                <p>
+                     <span> &#x2605; </span> 
+                     <span> &#x2605; </span> 
+                     <span> &#x2605; </span> 
+                     <span> &#9734; </span> 
+                     <span> &#9734;</span> 
+
+                </p>
+
+            </div>
+            <div class="feedback-message">
+                <textarea name="feedback-message" placeholder="Share your experience or suggestions..."></textarea>
+            </div>
+            <div class="button">
+                <form>
+                    <input type="submit" value="Submit Feedback">
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="past-feedback-section">
+        <h3>
+            Past Feedback
+        </h3>
+
+        <div class="past-feedback-cart">
+            <div class="past-feedback-content">
+                <div class="upper-block">
+                    <figure></figure>
+                    <p>251CV153</p>
+                    <figure></figure>
+                    <time datetime="10-10-2026">10 Oct 2025</time>
+                </div>
+                <div class="lower-block">
+                    3 pieces of Paneer are not sufficient.
+                </div>
+            </div>
+
+            <div class="past-feedback-content">
+                <div class="upper-block">
+                    <figure></figure>
+                    <p>251CV153</p>
+                    <figure></figure>
+                    <time datetime="13-11-2025"> 13 Nov 2025</time>
+                </div>
+                <div class="lower-block">
+                    quantity of quality food should be increased.
+                </div>
+            </div>
+
+            <div class="past-feedback-content">
+                <div class="upper-block">
+                    <figure></figure>
+                    <p>251CV153</p>
+                    <figure></figure>
+                    <time datetime="12-12-2026">12 Dec 2025</time>
+                </div>
+                <div class="lower-block">
+                    wednesday breakfast is not nice
+                </div>
+            </div>
+        </div>
+
+        <div class="past-feedback-content">
+            <div class="upper-block">
+                <figure></figure>
+                <p>251CV153</p>
+                <figure></figure>
+                <time datetime="17-01-2026">17 Jan 2026</time>
+            </div>
+            <div class="lower-block">
+                manchurian is too spicy.
+            </div>
+        </div>
+    </section>
+
     <script src="js_files/main_script.js"></script>
+    <script>
+      let star=   document.querySelector(".feedeback-content .star-ratting[data-key=('1')]")
+      console.log(star)
+    </script>
 
 
 </body>
