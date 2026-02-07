@@ -144,7 +144,7 @@ a {
 
 
 
-.mess-cut-apply-btn button,
+.mess-menu button,
 .feedback-btn button {
 
     background-color: rgb(103, 112, 210);
@@ -179,13 +179,13 @@ a {
 
 }
 
-.mess-cut-apply-btn button:hover,
+.mess-menu button:hover,
 .feedback-btn button:hover {
     background-color: rgb(82, 89, 166);
 
 }
 
-.mess-cut-apply-btn figure,
+.mess-menu figure,
 .feedback-btn figure {
     width: 40px;
 
@@ -195,7 +195,7 @@ a {
     object-fit: contain;
 }
 
-.mess-cut-apply-btn figure img,
+.mess-menu figure img,
 .feedback-btn figure img {
     max-width: 80%;
 }
